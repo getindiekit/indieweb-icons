@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieWeb building block icons</title>
+    <meta name="description" content="{{ pkg.description }}">
+    <style>
+      body {
+        font: 1rem/1.5 system-ui, sans-serif;
+        margin: 1rem;
+        min-height: 100vh;
+      }
+      body, h1, h2, h3, p, figure {
+        margin-block-end: 0;
+        margin-block-start: 0.5em;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+      }
+      h2 {
+        margin-block-end: 0;
+        margin-block-start: 2em;
+      }
+      figure {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        & svg {
+          block-size: 4rem;
+          color: var(--color);
+          fill: currentcolor;
+          inline-size: 4rem;
+          padding: 0.5em;
+        }
+      }
+      figcaption {
+        font: icon;
+      }
+
+      footer {
+        padding-block: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>IndieWeb building block icons</h1>
+    </header>
+
+    <main>
+      <p>Building block icons are used to quickly identify IndieWeb <a href="https://indieweb.org/building_blocks">building block</a> practices, features, and standards.</p>
+
+      <p>This page provides a preview of icons in the 2023 proposal.</p>
+
+      <p><a href="https://indieweb.org/Building_block_icons">Read more about this proposal and submit feedback on these icons on the IndieWeb wiki</a>.</p>
+
+    {%- for category, icons in icons | groupby("category") %}
+      <h2>{{ categories[category].title }}</h2>
+
+      <p>{{ categories[category].description }}</p>
+
+      <ul>
+      {%- for icon in icons %}
+        <li>
+          {%- set path = "icons/" + icon.category + "/" + (icon.title | slug) + ".svg" %}
+          <figure style="--color: #{{ categories[icon.category].color or icon.color }}">
+            {% set svg %}{% include path %}{% endset %}{{ svg | replace("\n", "") | replace("  ", "") | safe }}
+            <figcaption>
+              <a href="{{ pkg.homepage }}/blob/main/{{ path }}">{{ icon.title }}</a>
+            </figcaption>
+          </article>
+        </li>
+      {%- endfor %}
+      </ul>
+    {%- endfor %}
+    </main>
+
+    <footer>
+      <small>Icons released under a <a rel="licence" href="{{ metadata.homepage }}/LICENSE">{{ pkg.license }} license</a></small>
+    </footer>
+  </body>
+</html>
