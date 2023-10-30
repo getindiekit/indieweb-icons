@@ -1,0 +1,5 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <title>h-event</title>
+  <path fill="currentcolor" fill-rule="evenodd"
+    d="M48 56v60a32 32 0 0 0 32 32h52v8c0 11-9 20-20 20H32c-11 0-20-9-20-20V76c0-11 9-20 20-20h16Zm112-40c11 0 20 9 20 20v80c0 11-9 20-20 20H80c-11 0-20-9-20-20V36c0-11 9-20 20-20h80Zm-56 24h-2a6 6 0 0 0-6 6v6h-4a8 8 0 0 0-8 8v44a8 8 0 0 0 8 8h56a8 8 0 0 0 8-8V60a8 8 0 0 0-8-8h-4v-6a6 6 0 0 0-6-6h-2a6 6 0 0 0-6 6v6h-20v-6a6 6 0 0 0-6-6Zm40 24v34a2 2 0 0 1-2 2H98a2 2 0 0 1-2-2V64h48Z" />
+</svg>

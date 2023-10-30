@@ -1,0 +1,32 @@
+{
+  "name": "indieweb-icons",
+  "version": "0.1.0",
+  "description": "A unified set of icons to represent IndieWeb concepts, formats, and protocols.",
+  "keywords": [
+    "icons",
+    "indieweb"
+  ],
+  "homepage": "https://github.com/getindiekit/indieweb-icons",
+  "contributors": [
+    {
+      "name": "Paul Robert Lloyd",
+      "url": "https://paulrobertlloyd.com"
+    }
+  ],
+  "license": "CC0-1.0",
+  "main": "eleventy.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getindiekit/indieweb-icons.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf _site",
+    "build": "eleventy",
+    "predev": "rimraf _site",
+    "dev": "eleventy --serve --watch",
+    "start": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

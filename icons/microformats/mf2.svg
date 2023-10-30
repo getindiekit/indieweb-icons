@@ -1,0 +1,5 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <title>mf2</title>
+  <path fill="currentcolor" fill-rule="evenodd"
+    d="M48 56v60a32 32 0 0 0 32 32h52v8c0 11-9 20-20 20H32c-11 0-20-9-20-20V76c0-11 9-20 20-20h16Zm132-4v64c0 11-9 20-20 20H80c-11 0-20-9-20-20V36c0-11 9-20 20-20h64v28h-16v32c0 5-2.5 10-10 10s-10-5-10-10V44H92v72h15V92.5h1c2.3 3.7 5.7 5.5 10 5.5s7.7-1.8 10-5.5h1V98h15V52h36Zm-28-36 28 28h-28V16Z" />
+</svg>
